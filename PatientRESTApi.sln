@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatientRESTApi", "PatientRESTApi\PatientRESTApi.csproj", "{F29F75FB-E488-4292-99E7-E59A1F6AD334}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatientClient", "PatientClient\PatientClient.csproj", "{BD1A9C96-7EB9-41A4-AB67-5177B12F4F86}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{97259B70-37F1-431E-A82B-76939AAD46CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F29F75FB-E488-4292-99E7-E59A1F6AD334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F29F75FB-E488-4292-99E7-E59A1F6AD334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F29F75FB-E488-4292-99E7-E59A1F6AD334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F29F75FB-E488-4292-99E7-E59A1F6AD334}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD1A9C96-7EB9-41A4-AB67-5177B12F4F86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD1A9C96-7EB9-41A4-AB67-5177B12F4F86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD1A9C96-7EB9-41A4-AB67-5177B12F4F86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD1A9C96-7EB9-41A4-AB67-5177B12F4F86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97259B70-37F1-431E-A82B-76939AAD46CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97259B70-37F1-431E-A82B-76939AAD46CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97259B70-37F1-431E-A82B-76939AAD46CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97259B70-37F1-431E-A82B-76939AAD46CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CBB1C92-3A1D-496F-8A23-A9ED902AB68F}
+	EndGlobalSection
+EndGlobal

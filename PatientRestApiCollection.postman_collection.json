@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "b1eaefcc-0093-446d-b150-6ccd6367924a",
+		"name": "PatientRestApiCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41791439"
+	},
+	"item": [
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/patient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"patient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/patient/67cbfd2a-3938-4d5b-8e41-02086a34c44a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"patient",
+						"67cbfd2a-3938-4d5b-8e41-02086a34c44a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/patient/67cbfd2a-3938-4d5b-8e41-02086a34c44a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"patient",
+						"67cbfd2a-3938-4d5b-8e41-02086a34c44a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"use\": \"Non-officical\",\r\n    \"surname\": \"Ignat\",\r\n    \"name\": \"Zayac\",\r\n    \"patronymic\": \"Sidorovich\",\r\n    \"gender\": \"Male\",\r\n    \"birthDate\": \"2004-09-16T16:07:29.5229885\",\r\n    \"active\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/patient/75f17e93-57d3-4b2c-ae8f-139908d3ce06",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"patient",
+						"75f17e93-57d3-4b2c-ae8f-139908d3ce06"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"use\": \"Officical\",\r\n    \"surname\": \"Ignat\",\r\n    \"name\": \"Belskiy\",\r\n    \"patronymic\": \"Igorevich\",\r\n    \"gender\": \"Male\",\r\n    \"birthDate\": \"2001-11-23\",\r\n    \"active\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/patient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"patient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllByBirthdate1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/patient/birthdate/2023-12-09T16:07:29.8664504",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"patient",
+						"birthdate",
+						"2023-12-09T16:07:29.8664504"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllByBirthdate2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/patient/birthdate/2023-12-09",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"patient",
+						"birthdate",
+						"2023-12-09"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllByBirthdate3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/patient/birthdate/2023-12-09T00:00:00.0000000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"patient",
+						"birthdate",
+						"2023-12-09T00:00:00.0000000"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

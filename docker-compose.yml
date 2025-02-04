@@ -1,0 +1,41 @@
+services:
+  patientclient:
+    build:
+      context: .
+      dockerfile: ./PatientClient/Dockerfile
+    depends_on:
+    - patientrestapi
+    networks:
+    - patientnetwork
+  
+  patientrestapi:
+    build:
+      context: ./PatientRESTApi
+      dockerfile: Dockerfile
+    ports:
+    - "8080:8080"
+    depends_on:
+    - sqlserver
+    environment:
+    - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+    - patientnetwork
+    restart: on-failure
+    
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      SA_PASSWORD: "Password123!"
+      ACCEPT_EULA: "Y"
+    ports:
+    - "1433:1433"
+    volumes:
+    - sqlvolume:/var/opt/mssql
+    networks:
+    - patientnetwork
+  
+networks:
+  patientnetwork:
+  
+volumes:
+  sqlvolume:
